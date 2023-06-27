@@ -53,12 +53,9 @@ aside {
 #titulo{
     margin-top: 20px;
     color:rgb(24, 196, 196) ;
-    margin-left: 40px;
     font-size: 45px;
-    margin-left: 132px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+    margin-left: 40px;
+    text-align: center;
 }
 
 #titulo-principal{
