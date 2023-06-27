@@ -47,13 +47,13 @@ main {
 
 aside {
     float: right;
-    width: 40%;
+    width: 378px;
 }
 
 #titulo{
     margin-top: 20px;
     color:rgb(24, 196, 196) ;
-    margin-right: 10px;
+    margin-left: 40px;
     font-size: 45px;
     margin-left: 132px;
     flex-direction: column;
@@ -128,11 +128,12 @@ fieldset{
     border-radius: 15px;
     margin-top: 30px;
     height: 1100px;
-    width: 400px;
-    margin-left: 60px;
+    width: 312px;
+    margin-left: 28px;
     text-align: center;
     display: flex;
-    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    flex-direction: row-reverse;
 }
 #nome-footer{
     text-align: center;
