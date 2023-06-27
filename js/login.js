@@ -1,14 +1,14 @@
-
-//professora isso que estou fazendo entra no criterio (e)? quero fazer a pessoa preencher o formulario e quando ela clicar  submit aparecer um alerta pedindo que ela confirme os dados se sim ela vai ser direcionada para a pagina inicial se nao ela vai reescrever o formulario 
+ 
 function exibirDados() {
   var nome = document.getElementById("nome").value;
+  localStorage.setItem("nome", nome);
   var email = document.getElementById("email").value;
   var dataNascimento = document.getElementById("nascimento").value;
   var telefoneResidencial = document.getElementById("telefone_residencial").value;
   var celular = document.getElementById("celular").value;
   var genero = document.querySelector('input[name="genero"]:checked').value;
 
-  // perguntar sobre o genero e se conta o alerta
+
   var mensagem = "Confirme as informações:\n\n";
   mensagem += "Nome: " + nome + "\n";
   mensagem += "E-mail: " + email + "\n";
@@ -28,12 +28,4 @@ function exibirDados() {
     document.getElementById("celular").value = "";
     document.querySelector('input[name="genero"]:checked').checked = false;
   }
-}
-function exibirDados() {
-  var nome = document.getElementById("nome").value;
-  localStorage.setItem("nome", nome);
-}
-
-
-
-       
+}       
