@@ -19,7 +19,7 @@ function exibirDados() {
 
   if (confirm(mensagem)) {
     document.getElementById("formulario").submit();
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
   } else {
     document.getElementById("nome").value = "";
     document.getElementById("email").value = "";
