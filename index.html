@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Amigorão</title>
+        <link rel="short icon" href="../Site final 3/img/favicon (7).ico"/>
+        <link rel="stylesheet" href="../Site final 3/style/index.css">        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <figure>
+                    <figcaption>  
+                    <img src="../Site final 3/img/images (2).jpg " id="logo" >
+                    <p id="nomeicon">Amigorão</p> 
+                    </figcaption>
+                </figure>
+                <a class="op" href="../Site final 3/paginas/Venda.html">Venda</a>
+                <a class="op" href="../Site final 3/paginas/tipos de animais.html">Animais</a>
+                <a class="op" id="link-login" href="../Site final 3/paginas/Login.html">Login</a>
+            </nav>
+            <script>
+                function getNomeCadastrado() {
+                  var nome = localStorage.getItem("nome");
+                  console.log(nome)
+                  if (nome) {
+                    var loginID = document.getElementById('link-login')
+                    loginID.innerHTML = `${nome}`;
+                    loginID.setAttribute("id", "nome-pessoa")
+                    loginID.removeAttribute("id", "link-login")
+
+                    var nameEl = document.getElementById("nome-pessoa")
+                    var nomePessoa = document.createTextNode(`${nome}`)
+                    nameEl.appendChild(nomePessoa);
+
+                  }
+                }
+              
+                window.onload = function () {
+                  getNomeCadastrado();
+                }
+                // Remove o nome armazenado no localStorage ao atualizar a página
+                    window.addEventListener('beforeunload', function() {
+                        localStorage.removeItem('nome');
+                });
+            </script>
+        </header>
+        <main>
+            <h1 id="titulo-principal"><strong>Tem interesse em ter um anima exotico ? Venha ver oque voce precisa </strong> </h1>
+            <br>
+            <p id="oque_preciso"><strong>O que preciso saber para criar um animal exótico? </strong></p>
+            <p id="animal-seguro2">A primeira coisa a fazer quando você adquirir um animal exótico de estimação é procurar um veterinário especializado e informar-se sobre o manejo e vacinas necessárias.Não esqueça que esses cuidados fazem parte da sua responsabilidade de tutor.Muitas pessoas decidem criar esse tipo de animal, mas não possuem as informações necessárias para a manipulação correta.Erros na higiene, alimentação e exposição a ambientes podem provocar problemas sérios de saúde para o seu pet exótico. Por isso, é fundamental contar com ajuda especializada, inclusive na hora de comprar o necessário para a criação. 
+            </p>
+            <img src="../Site final 3/img/images.jpg" id="furao">
+            <p id="Som-furao">Sons de Furão</p>
+            <audio id="audio" src="../Site final 3/img/Som de Furão - Barulho de Furão.mp4" controls></audio>
+            <br>
+            <p id="animal-seguro"><strong>Como ter um pet exotico de forma legal e segura?</strong></p>
+            <p  id="animal-seguro2">É muito comum que as pessoas comprem papagaios, tartarugas, iguanas no  mercado ilegal e após algum tempo tentem legalizá-los;Mas isso jamais deve acontecer porque é considerado crime. Existem normativas emitidas pelos órgãos responsáveis, descrevendo todas as espécies que podem ser comercializadas, algumas necessitam de um controle mais intenso, outras não.
+                Essas leis podem variar de um Estado para outro. O animal precisa acompanhar a documentação de origem, e dependendo da espécie, precisa ser anilhado (no caso de aves) ou microchipado (no caso de mamíferos e répteis). ''Procure lojas que fazem um trabalho sério, com bons profissionais, junto a biólogos e veterinários. Eles sim poderão analisar o estado de saúde de cada espécie e explicar como cuidar corretamente''.
+            </p>
+        </main>
+        <aside>
+            <h3 id="titulo">curiosidades<h3>
+            <fieldset>
+                <br>
+                <dl  id="curiosidade-oque">
+                    <dt><strong>São todos perigosos?</strong></dt>
+                    <dd> É mito a crença de que animais de estimação exóticos são mais perigosos.A maioria deles é até mais fácil de manusear que cães e gatos e o perigo vai depender muito da espécie. É importante estudar as características comportamentais do pet antes de adquiri-lo.</dd>
+                    <br>
+                    <dt><strong>Como realizar uma boa adaptação?</strong></dt>
+                    <dd> A adaptação dependerá muito dos cuidados do tutor. É preciso avaliar o espaço que cada animal precisa, o tempo de atenção que o dono precisa dedicar a ele e se a pessoa está apta a oferecer a alimentação diferenciada que esses pets exigem. As aves precisam de espaço para voar e a higiene do espaço precisará ser diária. Quanto aos anfíbios e répteis como serpentes e tartarugas precisarão de recintos especiais, como terrários e aquaterrários. Além disso, de acordo com o animal podem ser necessário colocar lâmpadas especiais. </dd>
+                </dl>
+                <dl id="curiosidade-oque2">
+                    <dt><strong>Qual diferença entre os pets exóticos e os pets convencionais?</strong></dt>
+                    <dd>Pets exóticos possuem pontos que os diferem dos convencionais.O principal é a interação com o tutor. A maioria deles não aprecia um contato tão intenso como cães. Alguns não aceitam o toque.</dd>
+                    <br>
+                    <dt><strong>Qual diferença na alimentaçâo</strong></dt>
+                    <dd>Quanto à alimentação do animal, não é em qualquer pet shop que se encontra rações para ferrets (furão), por exemplo. Já os aracnídeos ainda precisam se alimentar de insetos vivos, como grilos e baratas. ''Estude a necessidade do pet em questão, veja se na sua cidade você tem acesso aos produtos necessários e condições para mantê-lo''.</dd>
+                    <br>
+                    <a id="fonte" href="https://canaldopet.ig.com.br/guia-bichos/exoticos/2020-10-16/confira-o-que-voce-precisa-saber-antes-de-ter-um-animal-exotico-em-casa.html">Fonte da pesquisa</a>
+                </dl>
+            </fieldset>    
+        </aside>
+        <footer id="nome-footer">
+            <p>Copyright © 2023 “Amigorão.” Todos os direitos reservado.</p>
+        </footer>
+    </body>
+</html>
