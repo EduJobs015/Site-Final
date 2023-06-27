@@ -29,6 +29,10 @@ function exibirDados() {
     document.querySelector('input[name="genero"]:checked').checked = false;
   }
 }
+function exibirDados() {
+  var nome = document.getElementById("nome").value;
+  localStorage.setItem("nome", nome);
+}
 
 
 
