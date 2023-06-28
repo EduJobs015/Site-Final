@@ -130,6 +130,7 @@ strong{
 }
 #Primeiro{
     text-align: center;
+    padding: 20px;
 }
 @media (min-width: 992px){
     #titulo{
