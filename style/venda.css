@@ -87,6 +87,7 @@ fieldset{
     width: 400px;
     margin-left: 80px;
     text-align: center;
+    padding:20px;
 }
 h3, address, a{
     margin-top: 10px;
